@@ -1,4 +1,6 @@
+ruby File.read('.ruby-version').strip
 source 'https://rubygems.org'
+
 
 gem 'pry'
 gem 'sinatra'
