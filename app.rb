@@ -1,15 +1,15 @@
 require "sinatra"
 require "sinatra/reloader" if development?
-require "pry-byebug"
-require "better_errors"
+# require "pry-byebug"
+# require "better_errors"
 require "date"
 
 set :bind, "0.0.0.0"
 
-configure :development do
-  use BetterErrors::Middleware
-  BetterErrors.application_root = File.expand_path(__dir__)
-end
+# configure :development do
+#   use BetterErrors::Middleware
+#   BetterErrors.application_root = File.expand_path(__dir__)
+# end
 
 get "/" do # <- router part
   erb :index
