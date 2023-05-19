@@ -4,7 +4,7 @@ require "sinatra/reloader" if development?
 # require "better_errors"
 require "date"
 
-set :bind, "0.0.0.0"
+# set :bind, "0.0.0.0"
 
 # configure :development do
 #   use BetterErrors::Middleware
